@@ -54,6 +54,7 @@ $(function() {
             //快速获取表单元素
             data: $(this).serialize(),
             success: function(res) {
+                // console.log(res);
                 if (res.status !== 0) {
                     return layer.msg(res.message);
                 }
@@ -62,7 +63,7 @@ $(function() {
                 //将得到的token值存入本地
                 localStorage.setItem('token', res.token);
                 //返回后台主页
-                // location.href = '/index.html';
+                location.href = '/index.html';
             }
         })
     })
