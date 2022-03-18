@@ -3,6 +3,14 @@ $(function() {
     logOut();
 });
 
+//给iframe绑定监听事件
+function loadFrame(obj) {
+    let as = $('.dd-a');
+    // for (let i = 0; i < as.length; i++) {
+
+    // }
+}
+
 function getUserInfo() {
     $.ajax({
         method: 'GET',
@@ -56,4 +64,5 @@ function logOut() {
             location.href = '/login.html';
         })
     })
+
 }

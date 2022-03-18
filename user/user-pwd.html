@@ -15,17 +15,17 @@
     <div class="layui-card">
         <div class="layui-card-header">修改密码</div>
         <div class="layui-card-body">
-            <form action="" class="layui-form">
+            <form action="" class="layui-form" id="form-pw">
                 <div class="layui-form-item">
                     <label class="layui-form-label">原密码</label>
                     <div class="layui-input-block">
-                        <input type="password" name="oldPw" required lay-verify="required" placeholder="请输入原密码" autocomplete="off" class="layui-input">
+                        <input type="password" name="oldPwd" required lay-verify="required" placeholder="请输入原密码" autocomplete="off" class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label">新密码</label>
                     <div class="layui-input-block">
-                        <input type="password" name="newPw" required lay-verify="required|pwd|samePwd" placeholder="请输入新密码" autocomplete="off" class="layui-input">
+                        <input type="password" name="newPwd" required lay-verify="required|pwd|samePwd" placeholder="请输入新密码" autocomplete="off" class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
@@ -36,8 +36,8 @@
                 </div>
                 <div class="layui-form-item">
                     <div class="layui-input-block">
-                        <button class="layui-btn" lay-submit lay-filter="formDemo">修改密码</button>
-                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        <button class="layui-btn" lay-submit>修改密码</button>
+                        <button type="reset" class="layui-btn layui-btn-primary btn-reset">重置</button>
                     </div>
                 </div>
             </form>

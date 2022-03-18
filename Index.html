@@ -49,9 +49,9 @@
                     <li class="layui-nav-item">
                         <a class="" href="javascript:;"><span class="iconfont icon-16"></span>文章管理</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>文章类别</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>文章列表</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>发布文章</a></dd>
+                            <dd><a class="dd-a" href="./article/art_cate.html" target="fm"><i class="layui-icon layui-icon-app"></i>文章类别</a></dd>
+                            <dd><a class="dd-a" href="./article/art_list.html" target="fm"><i class="layui-icon layui-icon-app"></i>文章列表</a></dd>
+                            <dd><a class="dd-a" href="./article/art_pub.html" target="fm"><i class="layui-icon layui-icon-app"></i>发布文章</a></dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item">
@@ -68,7 +68,7 @@
 
         <div class="layui-body">
             <!-- 内容主体区域 -->
-            <iframe src="/home/dashboard.html" frameborder="0" name="fm">
+            <iframe src="/home/dashboard.html" onload="loadFrame(this)" frameborder="0" name="fm">
               </iframe>
         </div>
 
@@ -77,6 +77,7 @@
             www.baidu.com-一个爱好编程的小p孩
         </div>
     </div>
+
     <script src="./assets/lib/layui/layui.all.js"></script>
     <script src="./assets/lib/jquery.js"></script>
     <script src="./assets/js/index.js"></script>

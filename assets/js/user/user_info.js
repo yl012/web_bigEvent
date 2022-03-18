@@ -21,7 +21,7 @@ function initUserInfo() {
             if (res.status !== 0) {
                 return layer.msg('获取用户信息失败！');
             }
-            console.log(res.data);
+            // console.log(res.data);
             // $('.username').val(res.data.username);
             //调用form.val来快速赋值
             form.val('formUserInfo', res.data)
